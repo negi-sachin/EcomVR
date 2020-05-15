@@ -1,0 +1,24 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.item{
+    height:400px;
+    width:430px;
+   margin:5px;
+  
+ 
+}
+

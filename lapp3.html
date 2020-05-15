@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.9.2/aframe.js"></script>
+    <title>Model</title>
+</head>
+<style>
+body{
+    border: 1px green solid;
+}
+</style>
+<body>
+    <a-scene vr-mode-ui="enabled: false" camera
+    position="0 -15 0">
+        <a-assets>
+          <a-asset-item id="model" src="./lappy3/scene.gltf"></a-asset-item>
+        </a-assets>
+      
+        <a-entity  gltf-model="#model" scale="0.1 0.1 0.1" position="0 1.5 -.8" 
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity></a-entity>
+      </a-scene>
+</body>
+</html>
